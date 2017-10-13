@@ -2,18 +2,71 @@
 	font-family: Besom;
 	src: url("../fonts/Besom/Besom.otf");
 }
-@font-face {
-	font-family: WhitePine-Regular;
-	src: url("../fonts/White-Pine/WhitePine-Regular.otf");
-}
 
 body,
 html {
 	height: 100%;
 }
 
+ul#navbar {
+	position: absolute;
+	font-family: Raleway;
+	font-size: 14px;
+	letter-spacing: 3px;
+	list-style-type: none;
+}
+
+ul#navbar li {
+	float: left;
+	text-align: center;
+	margin: 10px -10px;
+}
+
+ul#navbar a {
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+	border-radius: 3px;
+	padding: 2px 3px 2px 5px;
+	margin-right: 40px;
+}
+
+ul#navbar a.activeNav {
+	background-color: #FFF;
+	color: #172F31;
+}
+
+ul#navbar a:hover {
+	background-color: #FFF;
+	color: #172F31;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+a:active {
+	color: white;
+	text-decoration: none;
+}
+
 div#landing {
-	background-image: url("../images/matthew-smith-5935.jpg");
+	background-image: url("../images/matthew-smith-5935-blur.jpg");
+	background-image: url("../images/yosemite-dusk-landing-blur.jpg");
+	background-image: url("../images/yosemite-winter-landing-blur.jpg");
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -28,6 +81,20 @@ div#title {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-family: Besom;
+}
+
+a#changeBackground {
+	color: #fff;
+}
+
+a#downArrow {
+	float: right;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	font-size: 32px;
 }
 
 div#content {
