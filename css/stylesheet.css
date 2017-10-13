@@ -1,0 +1,35 @@
+@font-face {
+	font-family: Besom;
+	src: url("../fonts/Besom/Besom.otf");
+}
+@font-face {
+	font-family: WhitePine-Regular;
+	src: url("../fonts/White-Pine/WhitePine-Regular.otf");
+}
+
+body,
+html {
+	height: 100%;
+}
+
+div#landing {
+	background-image: url("../images/matthew-smith-5935.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+}
+
+div#title {
+	font-size: 6em;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: Besom;
+}
+
+div#content {
+	height: 2000px;
+}
