@@ -21,6 +21,6 @@ function onScroll() {
 		parallaxText[i].style.transform = 'translate(0px, ' + currScrollPos / 20 + '%)';
 	}
 	for (i = 0; i < parallaxTextCenter.length; i++) {
-		parallaxTextCenter[i].style.transform = 'translate(-50%, ' + (currScrollPos / 1.7 - 50) + '%)';
+		parallaxTextCenter[i].style.transform = 'translate(-50%, ' + (currScrollPos / 3 - 50) + '%)';
 	}
 }

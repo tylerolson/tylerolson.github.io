@@ -64,9 +64,6 @@ a:active {
 }
 
 div#landing {
-	background-image: url("../images/matthew-smith-5935-blur.jpg");
-	background-image: url("../images/yosemite-dusk-landing-blur.jpg");
-	background-image: url("../images/yosemite-winter-landing-blur.jpg");
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -74,17 +71,23 @@ div#landing {
 }
 
 div#title {
-	font-size: 6em;
+	font-size: 8em;
 	color: #fff;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-family: Besom;
+	text-align: center;
 }
 
 a#changeBackground {
 	color: #fff;
+	font-family: Raleway;
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+	padding: 24px 40px;
 }
 
 a#downArrow {

@@ -1,8 +1,9 @@
 var landing = document.getElementById("landing");
 var changeBackgroundButton = document.getElementById("changeBackground");
 
-var backgrounds = ["matthew-smith-5935-blur.jpg", "yosemite-dusk-landing-blur.jpg", "yosemite-winter-landing-blur.jpg"];
-var currentBackground = backgrounds.length - 1;
+var backgrounds = ["yosemite-winter-landing-blur.jpg", "matthew-smith-5935-blur.jpg", "yosemite-dusk-landing-blur.jpg"];
+var currentBackground = 0;
+
 changeBackgroundButton.onclick = function() {
 	currentBackground++;
 	if (currentBackground >= backgrounds.length) {
