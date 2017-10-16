@@ -18,6 +18,8 @@ My website
 
 ## Credits
 
+[Animate.css library](https://github.com/daneden/animate.css) by [Daniel Eden](https://github.com/daneden)
+
 [Normalize.css library](https://github.com/necolas/normalize.css/) by [Nicolas Gallagher](https://github.com/necolas)
 
 [Besom font](https://www.behance.net/gallery/22459913/Besom-FREE-Brush-font) by [Krisjanis Mezulis](https://www.behance.net/krisijanis) and [Gatis Vilaks](https://www.behance.net/gatisvilaks)
