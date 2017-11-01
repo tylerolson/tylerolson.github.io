@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,32 +8,63 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-
 	</head>
+
 	<body>
-		<ul id="navbar" class="animated fadeIn">
-			<li>
-				<a href="index.html" class="activeNav">HOME</a>
-			</li>
-			<li>
-				<a href="work.html">WORK</a>
-			</li>
-			<li>
-				<a href="about.html">ABOUT</a>
-			</li>
-			<li>
-				<a href="contact.html">CONTACT</a>
-			</li>
-		</ul>
-		<div id="landing" class="parallaxBackgroundCenter" style="background-image: url('images/yosemite-winter-landing-blur.jpg'), url('images/matthew-smith-5935-blur.jpg'), url('images/yosemite-dusk-landing-blur.jpg');">
-			<div id="title" class="parallaxTextCenter animated fadeIn">
-				Tyler Olson
+		<div id="wrapper">
+			<ul id="navbar" class="animated fadeIn">
+				<li>
+					<a href="index.html" class="activeNav">HOME</a>
+				</li>
+				<li>
+					<a href="#about">ABOUT</a>
+				</li>
+				<li>
+					<a href="#work">WORK</a>
+				</li>
+				<li>
+					<a href="contact.html">CONTACT</a>
+				</li>
+			</ul>
+
+			<div id="landing" class="parallaxBackgroundCenter" style="background-image: url('images/yosemite-winter-landing-blur.jpg'), url('images/matthew-smith-5935-blur.jpg'), url('images/yosemite-dusk-landing-blur.jpg');">
+				<div id="title" class="parallaxTextCenter animated fadeIn">
+					Tyler Olson
+				</div>
+				<a id="changeBackground" href="#">BACKGROUND</a>
+				<a id="downArrow" href="#content">&#8595;</a>
 			</div>
-			<a id="changeBackground" href="#">BACKGROUND</a>
-			<a id="downArrow" href="#content">&#8595;</a>
-		</div>
-		<div id="content">
-			<p>hehexd</p>
+
+			<div id="content">
+				<div id="about" class="contentSection">
+					About Section
+				</div>
+				<br>
+				<div id="work" class="contentSection">
+					Work Section
+					<div class="boxWrapper">
+						<div class="workBox">
+							<img class="boxImage" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png" alt="Logo">
+							<div class="boxDesc">Hello</div>
+						</div>
+
+						<div class="workBox">
+							<img class="boxImage" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png" alt="Logo">
+							<div class="boxDesc">Hello</div>
+						</div>
+
+						<div class="workBox">
+							<img class="boxImage" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png" alt="Logo">
+							<div class="boxDesc">Hello</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div id="contact" class="contentSection">
+					Contact Section
+				</div>
+				<div id="test"></div>
+			</div>
 		</div>
 		<script src="js/changeBackground.js" type="text/javascript"></script>
 		<script src="js/parallax.js" type="text/javascript"></script>

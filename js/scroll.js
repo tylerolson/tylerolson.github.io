@@ -1,5 +1,5 @@
 var as = document.getElementsByTagName("a"); //get all hyperlinks
-var speed = 13;
+var speed = 17;
 var scrollInterval;
 
 for (var i = 0; i < as.length; i++) { //for every hyperlinks
@@ -34,7 +34,7 @@ function clicked() {
 			}
 		}
 
-		console.log("currScrollPos " + document.documentElement.scrollTop, "currentTargetY " + targetElement.getBoundingClientRect().y);
+		//console.log("currScrollPos " + document.documentElement.scrollTop, "currentTargetY " + targetElement.getBoundingClientRect().y);
 	}
 
 	scrollInterval = setInterval(smoothScroll, 10);
