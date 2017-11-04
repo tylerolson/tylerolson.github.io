@@ -13,7 +13,8 @@ function onScroll() {
 		parallax[i].style.backgroundPosition = '0px ' + -currScrollPos / 3 + 'px';
 	}
 	for (i = 0; i < parallaxCenter.length; i++) {
-		parallaxCenter[i].style.backgroundPosition = 'center ' + -currScrollPos / 3 + 'px';
+		parallaxCenter[i].style.backgroundPosition = 'center calc(50% - ' + currScrollPos / 3 + 'px)';
+		console.log(parallaxCenter[i].style.backgroundPosition);
 
 	}
 	for (i = 0; i < parallaxText.length; i++) {
