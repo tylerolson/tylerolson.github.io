@@ -16,26 +16,34 @@ function clicked() {
 
 	var targetElement = document.getElementById(this.getAttribute("href").replace('#', '')); //set target element to the element in the href
 	var targetDocumentScroll = targetElement.getBoundingClientRect().y + document.documentElement.scrollTop;
+	var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
+
+	if (isSmoothScrollSupported) {
+		targetElement.scrollIntoView({
+			block: "start",
+			inline: "nearest",
+			behavior: 'smooth'
+		});
+	} else {
+		scrollInterval = setInterval(smoothScroll, 10);
+	}
 
 	function smoothScroll() {
 		if (targetElement.getBoundingClientRect().y > 0) { // if above target
-			if (document.documentElement.scrollTop + speed >= targetDocumentScroll) { // if next scroll is past element
+			if (window.pageYOffset + speed >= targetDocumentScroll) { // if next scroll is past element
 				clearInterval(scrollInterval); //clearInterval
-				document.documentElement.scrollTop = targetDocumentScroll; //set scroll to target scroll
+				window.scroll(0, targetDocumentScroll); //set scroll to target scroll
 			} else { //if next scroll is not past element
-				document.documentElement.scrollTop += speed; //add speed to it
+				window.scrollBy(0, speed); //add speed to it
 			}
 		} else { // if below target
-			if (document.documentElement.scrollTop - speed <= targetDocumentScroll) { // if next scroll is past element
+			if (window.pageYOffset - speed <= targetDocumentScroll) { // if next scroll is past element
 				clearInterval(scrollInterval); //clearInterval
-				document.documentElement.scrollTop = targetDocumentScroll; //set scroll to target scroll
+				window.scrollBy(0, targetDocumentScroll); //set scroll to target scroll
 			} else { //if next scroll is not past element
-				document.documentElement.scrollTop -= speed; //add speed to it
+				window.scrollBy(0, -speed); //add speed to it
 			}
 		}
-
 		//console.log("currScrollPos " + document.documentElement.scrollTop, "currentTargetY " + targetElement.getBoundingClientRect().y);
 	}
-
-	scrollInterval = setInterval(smoothScroll, 10);
 }
