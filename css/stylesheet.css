@@ -117,16 +117,16 @@ div#content {
 	position: relative;
 }
 
+h1.sectionHeader {
+	text-align: center;
+	margin: 0;
+	padding: 3% 0;
+}
+
 div#about {}
 
 div#work {
 	background-color: #EEEEEE;
-}
-
-h1#workHeader {
-	text-align: center;
-	margin: 0;
-	padding: 3% 0;
 }
 
 div.boxWrapper {
@@ -136,7 +136,7 @@ div.boxWrapper {
 }
 
 div.workBox {
-	background-color: #d7d7d7;
+	background-color: #fff;
 	width: 29.333%;
 	min-width: 300px;
 	height: 10%;
