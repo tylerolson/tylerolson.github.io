@@ -1,0 +1,67 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.section {
+  height: 100vh;
+}
+
+.landing {
+  background-image: url("../images/galaxy-blur.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.landingWelcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.landingThin {
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.letsgoButton {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  padding: 16px 31px;
+  font-weight: 200;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.65rem;
+  font-size: 1.75rem;
+  transition: 0.5s;
+}
+
+.letsgoButton:hover {
+  color: #0C161F;
+  background-color: white;
+}
+
+.projects {
+  background-color: #2E4556;
+}
