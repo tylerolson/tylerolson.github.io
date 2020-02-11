@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ahahah</title>
+    <title>Tyler</title>
 </head>
 
-<p><%= testString %></p>
+<p>Vists: <%= testString %></p>
+
+Repos:
+<ul>
+    <% repos.forEach(function(repo) { %>
+        <li><%= repo.name %> - <%= repo.description %></li>
+    <% }); %>
+</ul>
+
 </body>
 </html>

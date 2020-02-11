@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Glarity/glarity.github.io#readme",
   "dependencies": {
+    "@octokit/rest": "^16.43.1",
     "ejs": "^3.0.1",
     "express": "^4.17.1"
   }
