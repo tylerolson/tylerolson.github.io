@@ -39,9 +39,12 @@ function updateRepoList() {
 }
 
 function getRepoList() {
-    let repoFile = fs.readFileSync('repos.json');
-    let repos = JSON.parse(repoFile);
-    return repos;
+    console.log();
+    if (fs.existsSync('repos.json')) {
+        let repoFile = fs.readFileSync('repos.json');
+        let repos = JSON.parse(repoFile);
+        return repos;
+    }
 }
 
 module.exports = {

@@ -4,7 +4,6 @@ let repocollection = require("./repocollection.js");
 let app = express(); 
 
 let testString = 0;
-let repos = repocollection.getRepoList();
 
 repocollection.updateRepoList();
 setInterval(function(){
@@ -13,7 +12,7 @@ setInterval(function(){
 
 app.get("/", function(req, res) {
     testString++;
-    repos = repocollection.getRepoList();
+    let repos = repocollection.getRepoList();
     res.render("pages/index", {
         testString: testString,
         repos: repos
