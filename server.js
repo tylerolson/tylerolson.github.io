@@ -1,25 +1,31 @@
 const PORT = process.env.PORT || 3000
-let express = require("express"); 
+let express = require("express");
 let repocollection = require("./repocollection.js");
-let app = express(); 
+let app = express();
 
-let testString = 0;
+let vistCount = 0;
 
 repocollection.updateRepoList();
-setInterval(function(){
+setInterval(function () {
     repocollection.updateRepoList();
 }, 600000);
 
-app.get("/", function(req, res) {
-    testString++;
-    let repos = repocollection.getRepoList();
+app.get("/", function (req, res) {
+    vistCount++;
     res.render("pages/index", {
-        testString: testString,
-        repos: repos
+        page_name: "index",
+        vistCount: vistCount
     });
 });
 
-app.get('/repos', function(req, res) {
+app.get("/projects", function (req, res) {
+    res.render("pages/projects", {
+        page_name: "projects",
+        repos: repocollection.getRepoList()
+    });
+});
+
+app.get('/repos', function (req, res) {
     res.send(repocollection.getRepoList());
 });
 

@@ -10,8 +10,14 @@
         <%- include('../partials/header'); %>
     </header>
 
-    <p>Vists: <%= vistCount %>
-    </p>
+    Repos:
+    <ul>
+        <% repos.forEach(function(repo) { %>
+            <li>
+                <%= repo.name %> - <%= repo.description %>
+            </li>
+            <% }); %>
+    </ul>
 
     <%- include('../partials/end-body'); %>
 </body>
