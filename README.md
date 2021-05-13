@@ -1,2 +1,3 @@
 # tylerolson.github.io
-My website.
+Built using EJS and Node running on Heroku.
+[Live website here.](https://www.tylerolson.dev/)
