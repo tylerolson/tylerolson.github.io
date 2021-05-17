@@ -3,17 +3,33 @@
 
 <head>
     <%- include('../partials/head'); %>
+        <link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
-    <header>
-        <%- include('../partials/header'); %>
-    </header>
+    <div class="cover">
+        <header>
+            <%- include('../partials/header'); %>
+        </header>
 
-    <p>Vists: <%= vistCount %>
-    </p>
+        <h1 class="main-text display-1">Tyler Olson</h1>
+
+        <a href="#content"><i class="down-arrow bi bi-chevron-double-down"></i>
+        </a>
+
+    </div>
+
+    <div class="container">
+        <div id="content" class="section">
+            <div class="inner-section">
+                <p>Vists: <%= vistCount %>
+                </p>
+            </div>
+        </div>
+    </div>
 
     <%- include('../partials/end-body'); %>
+        <script src="/index.js"></script>
 </body>
 
 </html>

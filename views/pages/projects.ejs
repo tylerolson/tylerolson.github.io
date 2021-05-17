@@ -10,14 +10,23 @@
         <%- include('../partials/header'); %>
     </header>
 
-    Repos:
-    <ul>
-        <% repos.forEach(function(repo) { %>
-            <li>
-                <%= repo.name %> - <%= repo.description %>
-            </li>
-            <% }); %>
-    </ul>
+    <div class="container">
+        <div id="content" class="section">
+            <div class="inner-section">
+                <br><br><br><br>
+                <ul>
+                    Repos:
+
+                    <% repos.forEach(function(repo) { %>
+                        <li>
+                            <%= repo.name %> - <%= repo.description %>
+                        </li>
+                        <% }); %>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 
     <%- include('../partials/end-body'); %>
 </body>

@@ -1,0 +1,19 @@
+body {
+    background-color: #191B1C;
+    color: white;   
+}
+
+#top-navbar {
+    background-color: #282d2e;
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #454a4d;
+  }

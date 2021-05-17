@@ -8,7 +8,9 @@ let vistCount = 0;
 repocollection.updateRepoList();
 setInterval(function () {
     repocollection.updateRepoList();
-}, 600000);
+}, 600000); // update repos every 10 minutes
+
+app.use(express.static("public"));
 
 app.get("/", function (req, res) {
     vistCount++;
