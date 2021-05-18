@@ -29,18 +29,6 @@
     padding-bottom: 1em;
 }
 
-.section:before {
-    display: block;
-    height: 56px;   /* equal to the header height */
-    margin-top: -56px;  /* negative margin equal to the header height */
-    visibility: hidden;
-    content: "";
-}
-
-.inner-section {
-    padding-top: 50px;
-}
-
 #content {
     height: 150vh;
 }

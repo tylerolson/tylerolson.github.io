@@ -3,6 +3,7 @@
 
 <head>
     <%- include('../partials/head'); %>
+        <link rel="stylesheet" href="/projects.css">
 </head>
 
 <body>
@@ -11,18 +12,27 @@
     </header>
 
     <div class="container">
-        <div id="content" class="section">
+        <div class="section">
             <div class="inner-section">
-                <br><br><br><br>
-                <ul>
-                    Repos:
-
+                <div class="repo-list d-flex flex-wrap justify-content-around ">
                     <% repos.forEach(function(repo) { %>
-                        <li>
-                            <%= repo.name %> - <%= repo.description %>
-                        </li>
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= repo.name %>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">
+                                    <%= repo.language %>
+                                </h6>
+                                <p class="card-text">
+                                    <%= repo.description %>
+                                </p>
+                                <a href="<%= repo.html_url %>" class="card-link">Repo link</a>
+                            </div>
+                        </div>
                         <% }); %>
-                </ul>
+
+                </div>
             </div>
         </div>
     </div>

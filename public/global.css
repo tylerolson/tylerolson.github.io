@@ -1,5 +1,20 @@
+:root {
+  --main-bg-color: #191B1C;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #454a4d;
+}
+
 body {
-    background-color: #191B1C;
+    background-color: var(--main-bg-color);
     color: white;   
 }
 
@@ -8,12 +23,22 @@ body {
     transition: 0.5s;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #454a4d;
-  }
+.card {
+  background-color: #272b2c;
+}
+
+.card-body{ 
+  background-color: var(--main-bg-color);
+}
+
+.section:before {
+  display: block;
+  height: 56px;   /* equal to the header height */
+  margin-top: -56px;  /* negative margin equal to the header height */
+  visibility: hidden;
+  content: "";
+}
+
+.inner-section {
+  padding-top: 50px;
+}
